@@ -1,0 +1,654 @@
+html, body { 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #2F4858;
+    box-sizing: border-box; 
+    background-color: transparent;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.desktop {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+
+a:link, a:visited, a:active, a:hover {
+    color: white;
+}
+/* HEADER section START */
+.header {
+    position: relative;
+    width: 100%;
+    min-height: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    position: absolute;
+    height: 72.09074401855469px;
+    width: 100%;
+}
+
+.menuIcons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    position: absolute;
+    height: 72px;
+    width: 78px;
+    left: 20px;
+    top: -10px;
+    z-index: 2;
+}
+
+.burger {
+    position: absolute;
+    height: 14.798235893249512px;
+    width: 18.34981918334961px;
+    right: 20px;
+    top: 20.408203125px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.topRipped {
+    position: absolute;
+    height: 19.619434356689453px;
+    width: 100%;
+    top: 45px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    left: 0px;
+    top: 49px;
+}
+
+.videoImg {
+    width: 100%;
+    height: auto;
+}
+
+.play {
+    position: absolute;
+    height: 48.25581359863281px;
+    width: 50px;
+    top: calc(50% - 24px);
+}
+/* HEADER section END */
+
+/* CONTENT section START */
+.content {
+    position: relative;
+    padding: 60px 20px 55px;
+    text-align: center;
+    line-height: 14.63px;
+}
+
+/* CONTENT section END */
+
+/* GALLERY section START */
+.gallery {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.gallery::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/ripped.svg");
+    background-size: cover;
+}
+
+.gallery::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/ripped2.svg");
+    background-size: cover;
+}
+
+.firstRow {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 100%;
+}
+
+.twoImg {
+    display: flex;
+    flex-direction: column;
+    width: 42.5%;
+}
+
+.image2 {
+    width: 57.5%;
+}
+
+.secondRow {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 100%;
+}
+
+.image3 {
+    width: 52.5%;
+}
+
+.image4 {
+    width: 47.5%;
+}
+/* GALLERY section END */
+
+/* CTA section START */
+.cta {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px 50px;
+    text-align: center;
+}
+
+.firstBox, .secondBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26.68px;
+}
+
+.button {
+    position: relative;
+    height: 50px;
+    width: 182.67px;
+    color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 12px;
+    background: #FFA800;
+    z-index: 2;
+}
+
+.button:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.leftCircle {
+    position: absolute;
+    top: 0;
+    left: -25px;
+    height: 50px;
+    width: 50.33px;
+    border-radius: 50%;
+    background: #FFA800;
+    z-index: 1;
+
+}
+
+.rightCircle {
+    position: absolute;
+    top: 0;
+    right: -25px;
+    height: 50px;
+    width: 50.33px;
+    border-radius: 50%;
+    background: #FFA800;
+    z-index: 1;
+}
+/* CTA section END */
+
+/* CONTACT section START */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form > input[type="text"], input[type="email"], input[type="number"], textarea {
+    background-color: rgba(196, 196, 196, 0.4);
+    border: none;
+    border-radius: 6px;
+    padding-left: 11.35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+    color: #2F4858;
+}
+
+.form > input[type="text"], input[type="email"], input[type="number"] {
+    height: 35px;
+}
+
+.form > textarea {
+    padding-top: 11.35px;
+}
+
+.formInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.formInfo > p {
+    width: 100%;
+}
+
+.formInfo > span {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.form > button {
+    width: 140px;
+    margin: 20px auto;
+}
+/* CONTACT section END */
+
+/* SUPPORTERS section START */
+.supporters {
+    position: relative;
+    text-align: center;
+}
+
+.unionImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.supporters > p {
+    position: relative;
+    padding-top: 70px;
+    z-index: 2;
+}
+
+.logos {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px 50px 20px;
+    z-index: 2;
+}
+
+.logos > span {
+    width: 50%;
+    margin: 20px 0;
+}
+
+.teiLogo {
+    width: 130px;
+    height: 44px;
+}
+
+.semLogo {
+    width: 131px;
+    height: 51px;
+}
+
+.cityLogo {
+    width: 131px;
+    height: 44px;
+}
+
+.linLogo {
+    width: 48px;
+    height: 67px;
+}
+/* SPONSORS section end */
+
+/* FOOTER start */
+.footer {
+    position: relative;
+    padding: 40px 20px;
+    color: white;
+    background-color: #2F4858;
+    z-index: 2;
+}
+
+.footerImg {
+    position: absolute;
+    right: -270px;
+    top: -20px;
+    z-index: 3;
+}
+
+.goldenLogo {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    z-index: 4;
+}
+
+.footerInfo {
+    position: relative;
+    text-align: left;
+    z-index: 4;
+    margin-top: 140px;
+}
+
+.personName {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    padding: 20px 0;
+}
+
+.requisitesLink {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footerEnd {
+    position: relative;
+    z-index: 5;
+}
+
+.copyright, .terms {
+    font-weight: 500;
+    font-size: 11px;
+}
+
+
+/* FOOTER section END */
+
+/* TABLET media */
+@media only screen and (min-width: 768px) {
+    /* HEADER */
+    .nav {
+        height: 72px;
+    }
+    
+    .logo {
+        height: 118px;
+        width: 128px;
+        left: 80px;
+        top: -20px;
+    }
+    
+    .burger {
+        height: 20px;
+        width: 24.8px;
+        right: 80px;
+        top: 30px;
+    }
+    
+    .topRipped {
+        height: 27.94px;
+        top: 71px;
+    }
+    
+    .video {
+        top: 71px;
+    }
+    
+    .play {
+        height: 83px;
+        width: 86px;
+    }
+    /* CONTENT */
+    .text {
+        width: 608px;
+        font-size: 18px;
+        line-height: 21.94px;
+        margin: auto;
+    }
+    .content {
+        padding: 80px 20px 70px;
+    }
+
+    /* GALLERY */
+    .gallery {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+    .gallery::after {
+        height: 31px;
+    }
+    .gallery::before {
+        height: 65px;
+    }
+
+    /* CTA */
+    .cta {
+        flex-wrap: nowrap;
+        padding: 50px 0;
+    }
+    .firstBox, .secondBox {
+        gap: 60px;
+    }
+    
+    /* CONTACT */
+    .title {
+        font-size: 30px;
+    }
+    .form {
+        width: 608px;
+        margin: auto;
+    }
+    .form > input[type="text"], input[type="email"] {
+        width: 46%;
+    }
+
+    /* SPONSORS */
+    .logos {
+        flex-wrap: nowrap;
+        padding: 20px 20px 100px 20px;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 40px 80px;
+    }
+    .footerImg {
+        right: 0;
+        width: 100%;
+    }
+    .goldenLogo {
+        left: 80px;
+        top: 80px;
+        width: 162px;
+        height: 162px;
+    }
+    .footerInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: 50px;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: right;
+    }
+    .requisitesLink {
+        font-size: 18px;
+    }
+    .personName {
+        font-size: 24px;
+    }
+    .social {
+        justify-content: flex-end;
+    }
+    .footerEnd {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .copyright, .terms {
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+     /* HEADER */
+     .nav {
+        height: 72px;
+    }
+    .hidden {
+        display: flex;
+    }
+    .menuIcons {
+        height: 72px;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .menuLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        margin-left: 50px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .logo {
+        height: 146px;
+        width: 159px;
+        left: 62px;
+        top: -20px;
+    }
+    
+    .topRipped {
+        height: 34.93px;
+        top: 92.51px;
+    }
+    
+    .video {
+        top: 92.51px;
+    }
+    
+    /* CONTENT */
+    .text {
+        width: 608px;
+        font-size: 18px;
+        line-height: 21.94px;
+        margin: auto;
+    }
+    .content {
+        padding: 80px 20px 70px;
+    }
+    /* GALLERY */
+    .gallery::before {
+        height: 110px;
+    }
+    .gallery::after {
+        height: 55px;
+    }
+    /* CTA */
+    .firstBox, .secondBox {
+        font-size: 24px;
+    }
+    /* CONTACT */
+    .title {
+        font-size: 30px;
+    }
+    .form {
+        font-size: 18px;
+    }
+    .formInfo {
+        font-size: 14px;
+    }
+    /* SPONSORS */
+    .unionImg {
+        width: 100%;
+    }
+    .logos {
+        padding: 50px 50px 150px 50px;
+    }
+    /* FOOTER */
+    .footerImg {
+        right: 0;
+        top: -50px;
+        width: 100%;
+    }
+    .desktop {
+        display: inline;
+    }
+    .mobile {
+        visibility: hidden;
+        width: 15%;
+    }
+    .goldenLogo {
+        width: 182px;
+        height: 182px;
+    }
+    .footerInfo {
+        margin-top: 0px;
+        align-items: flex-start;
+    }
+    .footerLinks, .bank {
+        text-align: left;
+    }
+    .copyright {
+        width: 210px;
+    }
+}
