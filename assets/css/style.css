@@ -1,6 +1,7 @@
 html, body { 
     margin: 0; 
     padding: 0;
+    width: 100vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -52,7 +53,7 @@ a:link, a:visited, a:active, a:hover {
     width: 78px;
     left: 20px;
     top: -10px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .burger {
@@ -63,6 +64,60 @@ a:link, a:visited, a:active, a:hover {
     top: 20.408203125px;
     font-size: 18px;
     font-weight: 500;
+    z-index: 3;
+}
+
+.opened {
+    display: none;
+}
+
+.menuLinks > a, .mobileLinks > a {
+    color: #2F4858;
+}
+
+.mobileLinks {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    padding-top: 70px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    height: 0%;
+    -webkit-transition: opacity 0.5s ease-in .25s, visibility 0.75s ease-in-out, height 0.75s ease-out;
+    -moz-transition: opacity 0.5s ease-in .25s, visibility 0.75s ease-in-out, height 0.75s ease-out;
+    -o-transition: opacity 0.5s ease-in .25s, visibility 0.75s ease-in-out, height 0.75s ease-out;
+    transition: opacity 0.5s ease-in .25s, visibility 0.75s ease-in-out, height 0.75s ease-out;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.mobileLinks.toggleMenu {
+    opacity: 1;
+    visibility: visible;
+    height: 100vh;
+}
+
+.mobileLinks > span {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.mobileLinks > span > p:hover, .mobileLinks > a:hover {
+    text-decoration: underline #FFA800 3px;
+    font-weight: 600;
+}
+
+.lock-scroll {
+    position: fixed;
 }
 
 .topRipped {

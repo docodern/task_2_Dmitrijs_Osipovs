@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>SparklHeart</title>
+    <script type="text/javascript" src="./assets/js/theme.js"></script>
 </head>
 <body>
     <!-- HEADER section -->
@@ -16,19 +17,37 @@
         <nav id="nav" class="nav">
             <div class="menuIcons">
                 <img class="logo" src="assets/img/BlackLogo_3.svg" alt="logo">
-                <img class="burger mobile" src="assets/img/menu.svg" alt="burger menu icon">
+                <a class="burger mobile" href="javascript:void(0);" onclick="handleMenu()">
+                    <img id="openImg" src="assets/img/menu.svg" alt="burger menu icon">
+                    <img id="closeImg" class="opened" src="assets/img/close.svg" alt="close menu icon">
+                </a>
                 <p class="burger desktop">LV</p>
                 <div class="menuLinks hidden">
-                    <span>Ideja</span>
-                    <span>Piesaki Sapni</span>
-                    <span>Uzņēmējiem</span>
-                    <span>Sapņu banka</span>
-                    <span>Sapņus atbalsta</span>
-                    <span>99 Iedvesmas stāsti</span>
+                    <a href="/">Ideja</a>
+                    <a href="/">Piesaki Sapni</a>
+                    <a href="/">Uzņēmējiem</a>
+                    <a href="/">Sapņu banka</a>
+                    <a href="/">Sapņus atbalsta</a>
+                    <a href="/">99 Iedvesmas stāsti</a>
                 </div>
             </div>
             <img class="topRipped" src="assets/img/ripped.svg" alt="ripped line">
         </nav>
+        <!-- mobile menu -->
+            <div id="mobileMenu" class="mobileLinks">
+                <span>
+                    <p>LV</p>
+                    <p>EN</p>
+                    <p>RU</p>
+                </span>
+                <a href="/">Ideja</a>
+                <a href="/">Piesaki Sapni</a>
+                <a href="/">Uzņēmējiem</a>
+                <a href="/">Sapņu banka</a>
+                <a href="/">Sapņus atbalsta</a>
+                <a href="/">99 Iedvesmas stāsti</a>
+            </div>
+            <!-- mobile menu end -->
         <div class="video">
             <img class="videoImg" src="assets/img/SparkleVideo1.svg" alt="video img">
             <img class="play" src="assets/img/play.svg" alt="play button">
